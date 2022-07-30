@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Scientific Calculator</h1>
+    <form name="sci-calc">
+    <table class="calcuator">
+    <tr>
+        <td colspan="7"><input class="display-box" name="result" id="result" disabled/></td>
+    
+        <td><input type="button" value=" C " onclick="clearScreen()" id="btn"/></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="sin" id="fn" onclick="sin(form)"></td>
+        <td><input type="button" value="   1   " onclick="display('1')"></td>
+        <td><input type="button" value="  2  " onclick="display('2')"></td>
+        <td><input type="button" value="  3  " onclick="display('3')"></td>
+        <td><input type="button" value="/" onclick="display('/')"></td>
+        <td><input type="button" value="<=" onclick="backspace('<=')" id="btn"></td>
+
+        <td><input type="button" value="(" onclick="display('(')" id="fn"></td>
+        <td><input type="button" value=")" onclick="display(')')" id="fn"></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="cos" id="fn" onclick="cos(form)"></td>
+        <td><input type="button" value="4" onclick="display('4')"></td>
+        <td><input type="button" value="5" onclick="display('5')"></td>
+        <td><input type="button" value="6" onclick="display('6')"></td>
+        <td><input type="button" value="-" onclick="display('-')"></td>
+        <td><input type="button" value="x²" id="fn" onclick="square(form)"></td>
+        <td><input type="button" value="log" onclick="log(form)" id="fn"></td>
+        <td><input type="button" value="x^" id="fn" onclick="exp(form)"></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="tan" id="fn" onclick="tan(form)"></td>
+        <td><input type="button" value="7" onclick="display('7')"></td>
+        <td><input type="button" value="8" onclick="display('8')"></td>
+        <td><input type="button" value="9" onclick="display('9')"></td>
+        <td><input type="button" value="+" onclick="display('+')"></td>
+        <td><input type="button" value="√" onclick="sqrt(form)" id="fn"></td>
+        <td><input type="button" value="ln" id="fn" onclick=" ln(form) "></td>
+        <td><input type="button" value="x!" onclick="display('x!')" id="fn"></td>        
+    </tr>
+
+    <tr>
+        <td><input type="button" value="=" onclick="calculate()" id="btn"></td>
+        <td><input type="button" value="." onclick="display('.')"></td>
+        <td><input type="button" value="0" onclick="display('0')"></td>
+        <td><input type="button" value="*" onclick="display('*')"></td>
+        <td><input type="button" value="%" onclick="percent(form)"></td>
+        <td><input type="button" value="π" id="fn" onclick="pi(form,'3.14159265359')"></td>
+        <td><input type="button" value="red" onclick="red(form)" id="fn"></td>
+        <td><input type="button" value="e" onclick="display('e')" id="fn"></td>
+    </tr>
+        <!-- <div id="display"></div>
+
+        <div id="btns">
+
+            <div class="num"><button onClick="getValue7()">7</button></div>
+            <div class="num"><button onClick="getValue8()">8</button></div>
+            <div class="num"><button onClick="getValue9()">9</button></div>
+            <div class="opt"><button onClick="divi()">/</button></div>
+            <div class="num"><button onClick="getValue4()">4</button></div>
+            <div class="num"><button onClick="getValue5()">5</button></div>
+            <div class="num"><button onClick="getValue6()">6</button></div>
+ 
+            <div class="opt"><button onClick="minus()">-</button></div>
+            <div class="num"><button onClick="getValue1()">1</button></div>
+            <div class="num"><button onClick="getValue2()">2</button></div>
+            <div class="num"><button onClick="getValue3()">3</button></div>
+            <div class="opt"><button onClick="plus()">+</button></div>
+            <div class="opt"><button onClick="answer()">=</button></div>
+            <div class="num"><button onClick="getValue0()">0</button></div>
+            <div class="opt"><button onClick="mul()">x</button></div>
+
+        </div>
+    </div> -->
+</table>
+</form>
+    <script src="./app.js"></script>
+</body>
+</html>
